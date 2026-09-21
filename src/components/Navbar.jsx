@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navLinks, profile } from "../data/content";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,31 +40,35 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href={profile.resumeUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="hidden md:inline-flex items-center rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition-colors hover:border-accent hover:text-accent"
-        >
-          Resume
-        </a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
-          className="md:hidden flex h-9 w-9 items-center justify-center rounded-lg border border-border text-text"
-        >
-          <span className="sr-only">Menu</span>
-          <div className="flex flex-col gap-1.5">
-            <span
-              className={`block h-0.5 w-5 bg-current transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
-            />
-            <span className={`block h-0.5 w-5 bg-current transition-opacity ${open ? "opacity-0" : ""}`} />
-            <span
-              className={`block h-0.5 w-5 bg-current transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
-            />
-          </div>
-        </button>
+          <a
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:inline-flex items-center rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition-colors hover:border-accent hover:text-accent"
+          >
+            Resume
+          </a>
+
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            className="md:hidden flex h-9 w-9 items-center justify-center rounded-lg border border-border text-text"
+          >
+            <span className="sr-only">Menu</span>
+            <div className="flex flex-col gap-1.5">
+              <span
+                className={`block h-0.5 w-5 bg-current transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+              />
+              <span className={`block h-0.5 w-5 bg-current transition-opacity ${open ? "opacity-0" : ""}`} />
+              <span
+                className={`block h-0.5 w-5 bg-current transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+              />
+            </div>
+          </button>
+        </div>
       </nav>
 
       {open && (
