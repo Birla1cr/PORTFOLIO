@@ -126,25 +126,21 @@ export const otherProjects = [
     links: { live: "", github: "" },
   },
   {
-    name: "Online Examination Portal",
-    description:
-      "A user-friendly online examination web app built with Python and Streamlit, with secure authentication and MySQL-backed data management — from design through deployment.",
-    tech: ["Python", "Streamlit", "MySQL"],
-    links: { live: "", github: "" },
-  },
-  {
-    name: "GUI Notepad",
-    description:
-      "A GUI-based Notepad application in Python, with file operations including creation, reading, saving, and editing.",
-    tech: ["Python", "GUI"],
-    links: { live: "", github: "" },
-  },
-  {
     name: "Virtual Assistant (Web Speech API)",
     description:
       "A voice-activated virtual assistant using JavaScript and the Web Speech API — supports commands like opening YouTube and retrieving time, with ~98% reported speech recognition accuracy.",
     tech: ["JavaScript", "Web Speech API"],
     links: { live: "", github: "" },
+  },
+  {
+    name: "Personal Portfolio Website",
+    description:
+      "This site — a responsive portfolio built with React, Vite, and Tailwind CSS, featuring a resume download, an AI-Powered CRM case study, and scroll-driven sections for skills, experience, and education. Deployed on GitHub Pages.",
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    links: {
+      live: "https://birla1cr.github.io/PORTFOLIO/",
+      github: "https://github.com/Birla1cr/PORTFOLIO",
+    },
   },
 ];
 
@@ -164,7 +160,7 @@ export const experience = [
   {
     company: "ANTI.AI",
     role: "Full Stack Developer Intern",
-    period: "Nov 2025 – Jan 2026",
+    period: "Sept 2025 – Feb 2026",
     points: [
       "Developed and maintained responsive web applications using HTML, CSS, JavaScript, and React.js.",
       "Developed backend functionality using Node.js and JavaScript.",
