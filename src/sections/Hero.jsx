@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiArrowRight, FiDownload } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import {
   SiReact,
   SiNodedotjs,
@@ -81,13 +81,6 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(124,92,255,0.3),0_8px_24px_-8px_rgba(124,92,255,0.6)] transition-transform hover:-translate-y-0.5"
           >
             View Projects <FiArrowRight />
-          </a>
-          <a
-            href={profile.resumeUrl}
-            download={profile.resumeFileName}
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-text transition-colors hover:border-accent hover:text-accent"
-          >
-            Download Resume <FiDownload />
           </a>
         </motion.div>
 
