@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/PORTFOLIO/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Ankit Birla — Full Stack Developer & AI/ML Enthusiast. Portfolio featuring an AI-Powered CRM & Sales Intelligence Dashboard, React/Node projects, and ML-driven features." />
@@ -13,8 +23,8 @@
       rel="stylesheet"
     />
     <title>Ankit Birla | Full Stack Developer</title>
-    <script type="module" crossorigin src="/PORTFOLIO/assets/index-cyboB_zA.js"></script>
-    <link rel="stylesheet" crossorigin href="/PORTFOLIO/assets/index-CUas30jH.css">
+    <script type="module" crossorigin src="/PORTFOLIO/assets/index-ZFG6QJA5.js"></script>
+    <link rel="stylesheet" crossorigin href="/PORTFOLIO/assets/index-ls5H8nhL.css">
   </head>
   <body>
     <div id="root"></div>
