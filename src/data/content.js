@@ -18,7 +18,7 @@ export const profile = {
   github: "https://github.com/Birla1cr",
   linkedin: "https://www.linkedin.com/in/ankit-birla-863460203/",
   resumeUrl: "resume.pdf", // drop your resume.pdf into the /public folder
-  resumeFileName: "Ankit-Birla-Resume.pdf", // filename used when "Download Resume" is clicked
+  resumeFileName: "resume.pdf", // filename used when "Download Resume" is clicked
 };
 
 export const about = {
